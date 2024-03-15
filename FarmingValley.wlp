@@ -1,0 +1,3550 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "translation": [
+                -2.5,
+                0.0,
+                1.1575535
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 0,
+                        "handedness": "none"
+                    }
+                },
+                {
+                    "type": "howler-audio-listener"
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "vr-mode-active-switch": {
+                        "activateComponents": "in non-VR"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 3.3329999
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.0,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 3.3329999
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                3.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "126": {
+            "name": "CursorLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "127",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "209",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 2,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19",
+                        "rayCastMode": "physx",
+                        "maxDistance": 10.0
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch"
+                }
+            ],
+            "translation": [
+                2.384185791015625e-7,
+                1.1920928955078125e-7,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "127": {
+            "name": "3DCursorHitLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0388117,
+                1.5585094
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
+        },
+        "129": {
+            "name": "ControllerRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.1003172,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "130": {
+            "name": "ControllerLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                -0.1002006,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "205": {
+            "name": "TrackedSpace",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "player-height"
+                }
+            ],
+            "translation": [
+                0.0,
+                1.75,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "208": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "translation": [
+                0.0,
+                0.0099999,
+                1.3311299
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "209": {
+            "name": "CursorRayLeft",
+            "parent": "126",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "210": {
+            "name": "CursorRayMeshLeft",
+            "parent": "209",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "translation": [
+                2.3841928964429826e-7,
+                0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.707,
+                0.0,
+                0.0,
+                0.7072135
+            ],
+            "scaling": [
+                0.0049998,
+                0.3500002,
+                0.0049999
+            ]
+        },
+        "212": {
+            "name": "CursorRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "215",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "213",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 2,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "213": {
+            "name": "CursorRayRight",
+            "parent": "212",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "214": {
+            "name": "CursorRayMeshRight",
+            "parent": "213",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "translation": [
+                2.384185791015625e-7,
+                0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.7072796,
+                0.0,
+                0.0,
+                0.7069339
+            ],
+            "scaling": [
+                0.0049998,
+                0.3499999,
+                0.0049999
+            ]
+        },
+        "215": {
+            "name": "3DCursorHitRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
+        },
+        "233": {
+            "name": "Head",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                },
+                {
+                    "type": "howler-audio-listener",
+                    "active": false
+                },
+                {
+                    "type": "input"
+                }
+            ]
+        },
+        "260": {
+            "name": "Environment"
+        },
+        "261": {
+            "name": "Ground",
+            "parent": "260"
+        },
+        "262": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999999,
+                0.4999999
+            ]
+        },
+        "263": {
+            "name": "PhysicsBody",
+            "parent": "260",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "plane",
+                        "static": true
+                    }
+                }
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.7071068,
+                0.7071067
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scaling": [
+                1.0000001,
+                1.0000001,
+                1.0
+            ]
+        },
+        "265": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999995,
+                0.4999995
+            ]
+        },
+        "266": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999998,
+                0.4999998
+            ]
+        },
+        "267": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999994,
+                0.4999994
+            ]
+        },
+        "268": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999995,
+                0.4999995
+            ]
+        },
+        "269": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999989,
+                0.4999989
+            ]
+        },
+        "270": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999991,
+                0.4999991
+            ]
+        },
+        "271": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999994,
+                0.4999994
+            ]
+        },
+        "272": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999997,
+                0.4999997
+            ]
+        },
+        "273": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999992,
+                0.4999992
+            ]
+        },
+        "274": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999993,
+                0.4999993
+            ]
+        },
+        "275": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999996,
+                0.4999996
+            ]
+        },
+        "276": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999993,
+                0.4999993
+            ]
+        },
+        "277": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999988,
+                0.4999988
+            ]
+        },
+        "278": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999989,
+                0.4999989
+            ]
+        },
+        "279": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999992,
+                0.4999992
+            ]
+        },
+        "280": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999993,
+                0.4999993
+            ]
+        },
+        "281": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999988,
+                0.4999988
+            ]
+        },
+        "282": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999989,
+                0.4999989
+            ]
+        },
+        "283": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999992,
+                0.4999992
+            ]
+        },
+        "284": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999989,
+                0.4999989
+            ]
+        },
+        "285": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999983,
+                0.4999983
+            ]
+        },
+        "286": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999985,
+                0.4999985
+            ]
+        },
+        "287": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999988,
+                0.4999988
+            ]
+        },
+        "288": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999991,
+                0.4999991
+            ]
+        },
+        "289": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999986,
+                0.4999986
+            ]
+        },
+        "290": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999987,
+                0.4999987
+            ]
+        },
+        "291": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.499999,
+                0.499999
+            ]
+        },
+        "292": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999987,
+                0.4999987
+            ]
+        },
+        "293": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999982,
+                0.4999982
+            ]
+        },
+        "294": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                -2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999983,
+                0.4999983
+            ]
+        },
+        "295": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999986,
+                0.4999986
+            ]
+        },
+        "296": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999987,
+                0.4999987
+            ]
+        },
+        "297": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999982,
+                0.4999982
+            ]
+        },
+        "298": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999983,
+                0.4999983
+            ]
+        },
+        "299": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999986,
+                0.4999986
+            ]
+        },
+        "300": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999983,
+                0.4999983
+            ]
+        },
+        "301": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999977,
+                0.4999977
+            ]
+        },
+        "302": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999979,
+                0.4999979
+            ]
+        },
+        "303": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                4.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999982,
+                0.4999982
+            ]
+        },
+        "304": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999985,
+                0.4999985
+            ]
+        },
+        "305": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.499998,
+                0.499998
+            ]
+        },
+        "306": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999981,
+                0.4999981
+            ]
+        },
+        "307": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999984,
+                0.4999984
+            ]
+        },
+        "308": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999981,
+                0.4999981
+            ]
+        },
+        "309": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999976,
+                0.4999976
+            ]
+        },
+        "310": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                3.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999977,
+                0.4999977
+            ]
+        },
+        "311": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                2.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.499998,
+                0.499998
+            ]
+        },
+        "312": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999985,
+                0.4999985
+            ]
+        },
+        "313": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999979,
+                0.4999979
+            ]
+        },
+        "314": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.499998,
+                0.499998
+            ]
+        },
+        "315": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999983,
+                0.4999983
+            ]
+        },
+        "316": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.499998,
+                0.499998
+            ]
+        },
+        "317": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999975,
+                0.4999975
+            ]
+        },
+        "318": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                1.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999976,
+                0.4999976
+            ]
+        },
+        "319": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999979,
+                0.4999979
+            ]
+        },
+        "320": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999983,
+                0.4999983
+            ]
+        },
+        "321": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999978,
+                0.4999978
+            ]
+        },
+        "322": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                4.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999979,
+                0.4999979
+            ]
+        },
+        "323": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                3.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999982,
+                0.4999982
+            ]
+        },
+        "324": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999979,
+                0.4999979
+            ]
+        },
+        "325": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999974,
+                0.4999974
+            ]
+        },
+        "326": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                0.0,
+                2.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999975,
+                0.4999975
+            ]
+        },
+        "327": {
+            "name": "Grass",
+            "parent": "261",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "259"
+                    }
+                }
+            ],
+            "translation": [
+                -2.0,
+                5.960464477539065e-8,
+                0.9999998
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.5,
+                0.4999978,
+                0.4999978
+            ]
+        },
+        "328": {
+            "name": "Gui",
+            "parent": "130"
+        },
+        "329": {
+            "name": "Mesh",
+            "parent": "328",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "331"
+                    }
+                }
+            ],
+            "scaling": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "translation": [
+                0.0,
+                -3.576278970740532e-7,
+                4.448951074209617e-7
+            ],
+            "rotation": [
+                -0.7069342,
+                0.0,
+                0.0,
+                0.7072793
+            ]
+        },
+        "337": {
+            "name": "Mesh",
+            "parent": "328",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "331"
+                    }
+                }
+            ],
+            "scaling": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "translation": [
+                0.1839628,
+                -3.576278970740532e-7,
+                4.448951074209617e-7
+            ],
+            "rotation": [
+                -0.7069342,
+                0.0,
+                0.0,
+                0.7072793
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "controller_plyShape.006",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "controller_plyShape.001",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "165": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "195": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\button.glb"
+            },
+            "name": "Button"
+        },
+        "207": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            }
+        }
+    },
+    "textures": {
+        "44": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Tiles_01.png",
+                "file": "models\\Textures\\Tiles_01.png"
+            }
+        },
+        "330": {
+            "name": "texture"
+        },
+        "333": {
+            "link": {
+                "name": "Tiles_03.png",
+                "file": "models\\Textures\\Tiles_03.png"
+            }
+        },
+        "340": {
+            "link": {
+                "name": "autumn_field_4k.hdr",
+                "file": "models\\autumn_field_4k.hdr"
+            }
+        },
+        "344": {
+            "link": {
+                "name": "autumn_field_4k.hdr",
+                "file": "models\\autumn_field_4k.hdr"
+            },
+            "image": "342",
+            "name": "Irradiance probe: autumn_field_4k.hdr"
+        },
+        "345": {
+            "link": {
+                "name": "autumn_field_4k.hdr",
+                "file": "models\\autumn_field_4k.hdr"
+            },
+            "image": "343",
+            "name": "Specular probe: autumn_field_4k.hdr"
+        }
+    },
+    "images": {
+        "42": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "43": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "84": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "85": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "256": {
+            "link": {
+                "name": "Tiles_01.png",
+                "file": "models\\Textures\\Tiles_01.png"
+            }
+        },
+        "332": {
+            "link": {
+                "name": "Tiles_03.png",
+                "file": "models\\Textures\\Tiles_03.png"
+            }
+        },
+        "339": {
+            "link": {
+                "name": "autumn_field_4k.hdr",
+                "file": "models\\autumn_field_4k.hdr"
+            },
+            "hdr": true,
+            "stream": false,
+            "compression": "etc1s"
+        },
+        "342": {
+            "link": {
+                "name": "autumn_field_4k.hdr",
+                "file": "models\\autumn_field_4k.hdr"
+            },
+            "hdr": true,
+            "stream": false,
+            "compression": "etc1s",
+            "name": "Specular probe: autumn_field_4k.hdr",
+            "isProbe": false,
+            "isSpecularProbe": true,
+            "maxSize": [
+                512,
+                256
+            ]
+        },
+        "343": {
+            "link": {
+                "name": "autumn_field_4k.hdr",
+                "file": "models\\autumn_field_4k.hdr"
+            },
+            "hdr": true,
+            "stream": false,
+            "compression": "etc1s"
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "effectColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "font": "230"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "46": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "name": "ControllerLeft"
+        },
+        "88": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "name": "ControllerRight"
+        },
+        "128": {
+            "name": "Cursor",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "34"
+        },
+        "131": {
+            "link": {
+                "name": "Default_Material",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "164": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "201": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "name": "TextAccent",
+            "Text": {
+                "color": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "font": "230"
+            }
+        },
+        "202": {
+            "name": "Dark",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "diffuseColor": [
+                    0.1686274,
+                    0.1686257,
+                    0.1686257,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0274509,
+                    0.0274507,
+                    0.0274507,
+                    1.0
+                ]
+            }
+        },
+        "203": {
+            "name": "GreenHover",
+            "Phong": {
+                "diffuseColor": [
+                    0.4894117,
+                    0.917647,
+                    0.7511102,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.3294117,
+                    0.2013071,
+                    1.0
+                ]
+            }
+        },
+        "206": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.6862745,
+                    0.6862676,
+                    0.6862676,
+                    1.0
+                ]
+            },
+            "pipeline": "34",
+            "Flat": {
+                "color": [
+                    0.8392156,
+                    0.8392072,
+                    0.8392072,
+                    1.0
+                ]
+            }
+        },
+        "259": {
+            "name": "Grass",
+            "pipeline": "38",
+            "Phong": {
+                "diffuseTexture": "257"
+            }
+        },
+        "331": {
+            "name": "GuiBackground",
+            "pipeline": "335",
+            "Phong": {
+                "diffuseTexture": "333"
+            }
+        },
+        "338": {
+            "name": "Sky",
+            "pipeline": "229",
+            "Sky": {
+                "texture": "340",
+                "colorStop3": [
+                    0.1162629,
+                    0.6497048,
+                    0.9882352,
+                    1.0
+                ],
+                "colorStop1": [
+                    0.0,
+                    0.3999999,
+                    0.3482352,
+                    1.0
+                ],
+                "colorStop0": [
+                    0.1247519,
+                    0.3058823,
+                    0.1716327,
+                    1.0
+                ]
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "lib\\Color.glsl",
+                "file": "default"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "lib\\Compatibility.frag",
+                "file": "default"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "lib\\CoordinateSystems.glsl",
+                "file": "default"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "lib\\GI.frag",
+                "file": "default"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "lib\\Inputs.frag",
+                "file": "default"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "lib\\Lights.frag",
+                "file": "default"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "lib\\Materials.frag",
+                "file": "default"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "lib\\Math.glsl",
+                "file": "default"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "lib\\Packing.frag",
+                "file": "default"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "lib\\Quaternion.glsl",
+                "file": "default"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "lib\\Slug.frag",
+                "file": "default"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "lib\\Slug.vert",
+                "file": "default"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "lib\\Surface.frag",
+                "file": "default"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "lib\\Textures.frag",
+                "file": "default"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "lib\\Uniforms.glsl",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "FarmingValley",
+            "version": [
+                1,
+                1,
+                6
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "js/"
+            ],
+            "bundlingType": "esbuild",
+            "libraryPaths": [
+                "/js/lib/"
+            ]
+        },
+        "runtime": {
+            "visualizeColliders": false,
+            "webxr": {
+                "optionalFeatures": {
+                    "local-floor": true
+                }
+            }
+        },
+        "physx": {
+            "enable": true
+        },
+        "rendering": {
+            "sky": {
+                "enabled": true,
+                "material": "338"
+            },
+            "environment": {
+                "enabled": false,
+                "image": "339"
+            },
+            "textureAtlasSize": [
+                8192,
+                4096
+            ],
+            "compressedTextureAtlasSize": [
+                8192,
+                4096
+            ],
+            "bloom": {
+                "enabled": false
+            }
+        }
+    },
+    "animations": {},
+    "skins": {
+        "133": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeftSkin",
+            "joints": []
+        },
+        "166": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRightSkin",
+            "joints": []
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "223": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            },
+            "features": {
+                "ENVIRONMENT_PROBE": false,
+                "TEXTURED": false,
+                "GRADIENT_4_STOPS": true
+            },
+            "shader": "224"
+        },
+        "231": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "232": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "248": {
+            "link": {
+                "name": "TileFeedback",
+                "file": "default"
+            }
+        },
+        "335": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            },
+            "name": "Phong Opaque Textured Transparency",
+            "blending": true,
+            "blendSrcAlpha": "one",
+            "blendSrcRgb": "one",
+            "blendDestRgb": "one minus source alpha",
+            "blendDestAlpha": "one minus source alpha"
+        }
+    },
+    "files": {
+        "250": {
+            "fileName": "models/oculus-touch-v2-left.glb",
+            "importerName": ""
+        },
+        "251": {
+            "fileName": "models/oculus-touch-v2-right.glb",
+            "importerName": ""
+        },
+        "252": {
+            "fileName": "models/hand-left.glb",
+            "importerName": ""
+        },
+        "253": {
+            "fileName": "models/hand-right.glb",
+            "importerName": ""
+        },
+        "254": {
+            "fileName": "models/button.glb",
+            "importerName": ""
+        },
+        "255": {
+            "fileName": "models/teleport-indicator.glb",
+            "importerName": ""
+        },
+        "258": {
+            "fileName": "models/Textures/Tiles_01.png",
+            "importerName": ""
+        },
+        "334": {
+            "fileName": "models/Textures/Tiles_03.png",
+            "importerName": ""
+        },
+        "341": {
+            "fileName": "models/autumn_field_4k.hdr",
+            "importerName": ""
+        }
+    },
+    "fonts": {
+        "230": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "languages": {}
+}
