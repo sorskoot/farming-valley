@@ -18,6 +18,8 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
+import {TileSelector} from './components/tile-selector.js';
+import {WorldGen} from './components/world-gen.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -27,8 +29,8 @@ import * as API from '@wonderlandengine/api'; // Deprecated: Backward compatibil
 const Constants = {
     ProjectName: 'FarmingValley',
     RuntimeBaseName: 'WonderlandRuntime',
-    WebXRRequiredFeatures: [],
-    WebXROptionalFeatures: ['local-floor',],
+    WebXRRequiredFeatures: ['local',],
+    WebXROptionalFeatures: ['local','local-floor','hand-tracking','hit-test',],
 };
 const RuntimeOptions = {
     physx: true,
@@ -87,6 +89,8 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
+engine.registerComponent(TileSelector);
+engine.registerComponent(WorldGen);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {

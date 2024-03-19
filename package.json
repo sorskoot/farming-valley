@@ -1,7 +1,7 @@
 {
   "name": "FarmingValley",
   "version": "1.0.0",
-  "description": "My Wonderland project",
+  "description": "Farming Valley",
   "main": "js/index.js",
   "type": "module",
   "module": "js/index.js",
@@ -12,8 +12,11 @@
     "wonderland-engine"
   ],
   "dependencies": {
+    "@sorskoot/wonderland-components": "github:sorskoot/SorskootWonderlandComponents",
+    "@tweenjs/tween.js": "^23.1.1",
     "@wonderlandengine/api": "file:../../Tools/Wonderland Nightly/js/api/wonderlandengine-api.tgz",
     "@wonderlandengine/components": "^1.0.7",
-    "gl-matrix": "^3.4.3"
+    "gl-matrix": "^3.4.3",
+    "rxjs": "^7.8.1"
   }
 }

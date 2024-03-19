@@ -128,6 +128,17 @@ Focus on Quest 3, but it should run everywhere WebXR works.
 
 No support for desktop.
 
+### 6.3 Frameworks
+
+- @sorskoot/wonderland-components (github:sorskoot/SorskootWonderlandComponents)
+- rxjs
+- @tweenjs/tween.js 
+
+Optional:
+
+- tsyringe
+
+
 ## 7. Marketing and Monetization
 
 ### 7.1 Target Audience
@@ -140,4 +151,14 @@ No support for desktop.
 
 ---
 
+## Live streams
+
+**2024-03-18**
+- Add a few libraries we will need
+- Start working on the basics of the world generation
+
+---
+
+
 *This document is a first draft and subject to change as the development of Farming Valley progresses.*
+
